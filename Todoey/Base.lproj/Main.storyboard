@@ -32,7 +32,13 @@
                             <outlet property="delegate" destination="5JV-xM-nGX" id="GNL-1o-jTe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="TLy-MC-lbw"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="TLy-MC-lbw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ja9-Vc-dYO">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="5JV-xM-nGX" id="Ya7-5x-5fz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYc-k6-mdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +52,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="kJr-AO-iyp">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.97663301229999999" green="0.63325452800000004" blue="0.69569468499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
